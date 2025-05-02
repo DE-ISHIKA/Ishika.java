@@ -15,10 +15,15 @@ public class func_math {
         h.fun2(diff);
     }
     void fun2(int diff){
-        if(diff%2 == 0)
-            System.out.println(diff+" IS EVEN");
+        if (diff >= 0) 
+        {
+            if (diff % 2 == 0)
+                System.out.println(diff + " IS EVEN");
+            else
+                System.out.println(diff + " IS ODD");
+        } 
         else
-            System.out.println(diff+" IS ODD");
+            System.out.println("NUMBER IS NEGATIVE");
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
